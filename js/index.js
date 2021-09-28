@@ -4,3 +4,14 @@ Array.from(document.links).forEach(link => {
         event.preventDefault();
     })
 })
+
+const footerContent = document.querySelector('footer p');
+footerContent.addEventListener('click', function (event) {
+    console.log('click event')
+    event.stopPropagation();
+
+})
+const bodyElement = document.querySelector('body');
+bodyElement.addEventListener('click', function (event) {
+    console.log('click')
+})
