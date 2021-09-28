@@ -47,7 +47,7 @@ headerElement.addEventListener('dblclick', function (event) {
     event.target.style.color = 'fuchsia';
 })
 
-window.addEventListener('load', (event) => alert('Your page has loaded!'));
+window.addEventListener('load', () => alert('Your page has loaded!'));
 
 const imageElements = document.querySelectorAll('img');
 imageElements.forEach(image => image.addEventListener('dragstart', () => alert("Dont't touch that!")))
